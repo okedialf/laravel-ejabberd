@@ -1,11 +1,11 @@
 {
-  "name": "kevin-kibet/laravel-ejabberd",
+  "name": "okedialf/laravel-ejabberd",
   "description": "Ejabbered API Wrapper for Laravel/lumen",
   "license": "MIT",
   "authors": [
     {
-      "name": "kevin-kibet",
-      "email": "kevynkybet@gmail.com"
+      "name": "Alfred Okedi",
+      "email": "okedialf@gmail.com"
     }
   ],
   "require": {
