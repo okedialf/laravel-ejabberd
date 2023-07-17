@@ -8,6 +8,7 @@
 
 namespace Ejabberd;
 
+use Ejabberd\Commands\ChangePassword;
 use Ejabberd\Commands\Contracts\IEjabberdCommand;
 use Ejabberd\Commands\CreateUser;
 use Ejabberd\Commands\SendMessage;
@@ -105,5 +106,16 @@ class Ejabberd
     public function sendMessage(SendMessage $sendMessage)
     {
         return $this->execute($sendMessage);
+    }
+
+
+    /**
+     * @param ChangePassword $changePassword
+     * @return null|\Psr\Http\Message\StreamInterface
+     * @throws EjabberdException
+     */
+    public function changePassword(ChangePassword $changePassword)
+    {
+        return $this->execute($changePassword);
     }
 }
