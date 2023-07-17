@@ -35,7 +35,7 @@ class ChangePassword implements IEjabberdCommand
         return [
             'user' => $this->user,
             'host' => $this->host,
-            'password' => $this->password
+            'newpass' => $this->password
         ];
     }
 }
